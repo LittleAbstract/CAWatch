@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_export"
+        android:title="@string/menu_export"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_open_settings"
+        android:title="@string/menu_open_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_go_pro"
+        android:title="@string/menu_go_pro"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_monitoring_mode"
+        android:title="@string/menu_monitoring_mode"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_clear_history"
+        android:title="@string/menu_clear_history"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_reset_baseline"
+        android:title="@string/menu_reset_baseline"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+</menu>

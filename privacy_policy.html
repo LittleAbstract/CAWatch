@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAWatch — Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; line-height: 1.6; }
+    h1 { font-size: 1.8rem; } h2 { margin-top: 2rem; font-size: 1.2rem; }
+    code { background: #f3f3f3; padding: 0.1rem 0.3rem; border-radius: 4px; }
+    footer { margin-top: 3rem; color: #666; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h1>CAWatch Privacy Policy</h1>
+  <p><strong>Effective date:</strong> July 15, 2026<br>
+     <strong>App:</strong> CAWatch (package <code>com.security.careactivator</code>)</p>
+
+  <p>CAWatch is a security tool that watches your device's trusted certificate
+     store and notifies you when a new user-installed Certificate Authority (CA)
+     appears. This policy explains what the app does and does not do with your data.</p>
+
+  <h2>1. Data we collect</h2>
+  <p>CAWatch stores <strong>only on your device</strong> a local baseline of the
+     Certificate Authorities already trusted on your phone. For each CA this
+     includes its issuer name, subject name, SHA-256 fingerprint, and the time it
+     was first detected. This is device/security state metadata — it is not your
+     identity, contacts, location, or any other personal information.</p>
+
+  <h2>2. Data we share or transmit</h2>
+  <p><strong>None.</strong> CAWatch makes no network connections. It has no
+     internet permission, no analytics, and no advertising SDKs. The CA metadata
+     described above never leaves your device. You can clear it at any time with
+     the in-app "Reset baseline" action, or wipe everything by uninstalling the app.</p>
+
+  <h2>3. Permissions we use</h2>
+  <ul>
+    <li><strong>Foreground service (special use)</strong> — only for the optional
+        "Always-on" monitoring mode, which runs a lightweight foreground service to
+        continuously watch the trust store and show a persistent status notification.</li>
+    <li><strong>Receive boot completed</strong> — so monitoring can resume after a
+        device restart and the baseline comparison stays current.</li>
+    <li><strong>Post notifications</strong> — to alert you when a new user-installed
+        CA is detected.</li>
+  </ul>
+  <p>No location, camera, microphone, contacts, storage, or other sensitive
+     permissions are requested.</p>
+
+  <h2>4. Subscriptions</h2>
+  <p>CAWatch may offer an optional subscription (e.g. a free trial followed by a
+     monthly plan) to unlock the "Always-on" monitoring mode. All payments are
+     processed by <strong>Google Play</strong> through the Google Play Billing
+     system. CAWatch itself does not collect, store, or transmit any payment
+     information. Subscription management, including cancellation and refunds, is
+     handled entirely by Google Play.</p>
+
+  <h2>5. Children</h2>
+  <p>CAWatch is not directed to children and does not knowingly collect any data
+     from children.</p>
+
+  <h2>6. Changes</h2>
+  <p>If this policy changes, the updated version will be posted at this URL.</p>
+
+  <h2>7. Contact</h2>
+  <p>Questions? Contact the developer through the CAWatch listing on Google Play
+     Store, or by email at <code>no-reply@saltandswell.org</code>.</p>
+
+  <footer>CAWatch is provided "as is", without warranty of any kind.</footer>
+</body>
+</html>

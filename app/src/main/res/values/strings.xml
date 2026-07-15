@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CAWatch</string>
+    <string name="app_description">Alerts you the moment a new Certificate Authority is installed on your device</string>
+
+    <string name="title_activity_main">CAWatch</string>
+    <string name="title_activity_detail">Certificate details</string>
+    <string name="title_activity_onboarding">Welcome</string>
+
+    <!-- Main -->
+    <string name="label_no_data">No new certificate authorities detected</string>
+    <string name="label_empty_subtitle">Monitoring is active. If an app or profile installs a user CA, it will show up here and you will get a notification.</string>
+    <string name="label_scan_now">Scan now</string>
+    <string name="label_status_baseline">Baseline: %1$d trusted user CA(s)</string>
+    <string name="label_status_mode_always">Mode: Always-on monitor (Pro)</string>
+    <string name="label_status_mode_always_locked">Mode: Always-on monitor (locked — upgrade)</string>
+    <string name="label_status_mode_boot">Mode: Boot + manual scans</string>
+    <string name="label_status_none">Baseline not captured yet — run a scan</string>
+
+    <!-- Menu -->
+    <string name="menu_export">Export report</string>
+    <string name="menu_open_settings">Open credential settings</string>
+    <string name="menu_monitoring_mode">Monitoring mode</string>
+    <string name="menu_mode_always">Always-on (persistent notification)</string>
+    <string name="menu_mode_always_locked">Always-on (Pro — tap to unlock)</string>
+    <string name="menu_go_pro">Upgrade / Manage Pro</string>
+    <string name="menu_mode_boot">Boot + manual only (default)</string>
+    <string name="menu_clear_history">Clear detection history</string>
+    <string name="menu_reset_baseline">Reset baseline…</string>
+    <string name="menu_about">About</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Know when a CA is installed</string>
+    <string name="onboarding_body">A user Certificate Authority can let someone intercept HTTPS traffic on this device.\n\nCAWatch snapshots your current user CAs, then alerts you the moment a new one appears. Everything stays on your phone — no network, no accounts.</string>
+    <string name="onboarding_mode_title">How should we monitor?</string>
+    <string name="onboarding_mode_boot_label">Boot + manual (recommended)</string>
+    <string name="onboarding_mode_boot_desc">Scans after reboot and when you tap Scan. No persistent notification.</string>
+    <string name="onboarding_mode_always_label">Always-on</string>
+    <string name="onboarding_mode_always_desc">Keeps a foreground service running for continuous monitoring. Shows a status notification.</string>
+    <string name="onboarding_privacy">Reads only certificate issuer, subject, and SHA-256 fingerprint. Stores data locally. Never leaves the device.</string>
+    <string name="onboarding_continue">Continue</string>
+    <string name="onboarding_get_started">Capture baseline &amp; start</string>
+    <string name="onboarding_notifications_hint">Allow notifications so you can be alerted immediately when a new CA is installed.</string>
+
+    <!-- Detail -->
+    <string name="detail_issuer">Issuer</string>
+    <string name="detail_subject">Subject</string>
+    <string name="detail_fingerprint">SHA-256 fingerprint</string>
+    <string name="detail_detected_at">Detected</string>
+    <string name="detail_explain">This certificate was not in your trusted baseline. Malware, VPN apps, MDM profiles, or tools like Charles/mitmproxy sometimes install user CAs. If you did not install it, remove it in system settings.</string>
+    <string name="detail_open_settings">Open credential settings</string>
+    <string name="detail_accept_baseline">Mark trusted (add to baseline)</string>
+    <string name="detail_share">Share details</string>
+    <string name="detail_dismiss">Dismiss from list</string>
+    <string name="detail_accept_confirm_title">Add to trusted baseline?</string>
+    <string name="detail_accept_confirm_body">Only do this if you intentionally installed this CA. Future scans will no longer alert on it.</string>
+    <string name="detail_accepted">Added to baseline</string>
+    <string name="detail_dismissed">Removed from history</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_reset_title">Reset trusted baseline?</string>
+    <string name="dialog_reset_body">This clears your baseline and detection history, then captures a new baseline from CAs currently on the device. Any malicious CA already present will be treated as trusted.</string>
+    <string name="dialog_clear_title">Clear detection history?</string>
+    <string name="dialog_clear_body">Detected events will be removed. The trusted baseline is kept.</string>
+    <string name="dialog_confirm">Confirm</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_foreground">CA Monitor Service</string>
+    <string name="notification_channel_alerts">CA Installation Alerts</string>
+    <string name="notification_foreground_title">CA Monitor</string>
+    <string name="notification_foreground_text">Monitoring for newly installed certificates</string>
+    <string name="notification_alert_title">New Certificate Authority Detected</string>
+    <string name="notification_alert_single">New CA installed: %s</string>
+    <string name="notification_alert_multiple">%d new CAs installed. Tap to view.</string>
+
+    <!-- Pro / Billing -->
+    <string name="pro_dialog_title">CAWatch Pro</string>
+    <string name="pro_dialog_body">Unlock Always-on monitoring with a 7-day free trial, then a small monthly plan — or a one-time lifetime unlock. Cancel anytime. The free app keeps boot + manual scans forever.</string>
+    <string name="pro_option_subscription">Subscription — 7-day free trial, then monthly</string>
+    <string name="pro_option_lifetime">Lifetime unlock (one-time)</string>
+    <string name="pro_active">You have CAWatch Pro. Always-on monitoring is unlocked.</string>
+    <string name="pro_manage">Manage subscription</string>
+    <string name="toast_scan_started">Scan started…</string>
+    <string name="toast_scan_complete">Scan complete</string>
+    <string name="toast_exported">Export ready</string>
+    <string name="toast_mode_updated">Monitoring mode updated</string>
+    <string name="toast_history_cleared">History cleared</string>
+    <string name="toast_baseline_reset">Baseline reset — run a scan to recapture</string>
+    <string name="toast_nothing_to_export">Nothing to export yet</string>
+    <string name="toast_error">Error: %s</string>
+    <string name="share_export_title">CAWatch report</string>
+    <string name="about_message">CAWatch keeps a local baseline of user-installed Certificate Authorities and alerts when a new one appears.\n\nFully offline. No analytics. No ads in this build.\n\nVersion %1$s</string>
+    <string name="copied">Copied to clipboard</string>
+</resources>

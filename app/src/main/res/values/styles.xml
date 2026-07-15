@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CA Reactivator Detector - Style Resources -->
+<resources>
+    <!-- Base application style -->
+    <style name="AppTheme" parent="Theme.CAWatch">
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <!-- Default styles for Material Components -->
+    <style name="ButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    
+    <style name="TextStyle" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+    </style>
+    
+    <!-- Text styles -->
+    <style name="TextStyle.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TextStyle.Body">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+    </style>
+    
+    <style name="TextStyle.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    
+    <!-- Button styles -->
+    <style name="ButtonStyle.Primary">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:padding">16dp</item>
+    </style>
+</resources>

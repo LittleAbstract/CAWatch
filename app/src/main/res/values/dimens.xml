@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CA Reactivator Detector - Dimension Resources -->
+<resources>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="large_padding">24dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="button_padding_vertical">12dp</dimen>
+    <dimen name="button_padding_horizontal">24dp</dimen>
+    <dimen name="list_item_height">64dp</dimen>
+</resources>

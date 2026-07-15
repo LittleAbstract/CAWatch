@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Security / trust palette (light) -->
+    <color name="colorPrimary">#0D47A1</color>
+    <color name="colorPrimaryVariant">#002171</color>
+    <color name="colorSecondary">#00897B</color>
+    <color name="colorSecondaryVariant">#00695C</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorSurface">#F7F9FC</color>
+    <color name="colorOnSurface">#1A1C1E</color>
+    <color name="colorError">#B3261E</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorBackground">#EEF2F7</color>
+    <color name="colorOnBackground">#1A1C1E</color>
+
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="statusChipBg">#E3F2FD</color>
+    <color name="statusChipText">#0D47A1</color>
+    <color name="alertAccent">#C62828</color>
+    <color name="safeAccent">#2E7D32</color>
+    <color name="fingerprintMuted">#5F6368</color>
+</resources>

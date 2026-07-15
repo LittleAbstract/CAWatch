@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#90CAF9</color>
+    <color name="colorPrimaryVariant">#42A5F5</color>
+    <color name="colorSecondary">#80CBC4</color>
+    <color name="colorSecondaryVariant">#4DB6AC</color>
+    <color name="colorOnPrimary">#0D1B2A</color>
+    <color name="colorOnSecondary">#0D1B2A</color>
+    <color name="colorSurface">#1B1F24</color>
+    <color name="colorOnSurface">#E8EAED</color>
+    <color name="colorError">#F2B8B5</color>
+    <color name="colorOnError">#601410</color>
+    <color name="colorBackground">#121418</color>
+    <color name="colorOnBackground">#E8EAED</color>
+
+    <color name="cardBackground">#1E242B</color>
+    <color name="statusChipBg">#1A3A5C</color>
+    <color name="statusChipText">#90CAF9</color>
+    <color name="alertAccent">#EF9A9A</color>
+    <color name="safeAccent">#81C784</color>
+    <color name="fingerprintMuted">#9AA0A6</color>
+</resources>
