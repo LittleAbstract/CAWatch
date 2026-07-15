@@ -1,7 +1,7 @@
 # CAWatch — Google Play Store Submission Pack
 
 App: CAWatch (com.security.careactivator)
-Build: app-release.aab (signed, v1.2.0 / versionCode 3)
+Build: app-release.aab (signed, v1.3.0 / versionCode 4)
 targetSdk 35 (Android 15) · minSdk 23 (Android 6.0)
 
 ============================================================
@@ -150,6 +150,54 @@ Console click-path (Play Console → Monetize → Products):
      2. Price: e.g. $19.99. Save + activate.
   Note: Play requires a linked merchant account before paid products can be
   created/published. Free tier (Boot + manual scans) stays fully functional.
+
+============================================================
+7) GITHUB REPO + PAGES CLICK-PATH (done — here for reproducibility)
+============================================================
+
+Repo: https://github.com/LittleAbstract/CAWatch  (public)
+Live privacy URL: https://littleabstract.github.io/CAWatch/privacy_policy.html
+
+To recreate from scratch:
+  a) gh auth login  (browser/device-code; needs 'repo' scope)
+  b) gh repo create CAWatch --public --source . --remote origin --push
+     (or on the web: New repository -> name CAWatch -> public -> Create)
+  c) Ensure privacy_policy.html is at the repo ROOT (it is).
+  d) Repo -> Settings -> Pages ->
+       Source: "Deploy from a branch"
+       Branch: main   |  Folder: / (root)
+       Save.
+  e) Wait ~1 min; visit the URL -> it should return HTTP 200.
+  f) Put that URL in Play Console -> App content -> Privacy Policy URL
+     (already recorded above in section 5, step 1).
+
+Note: keystore.properties / *.keystore / checkpoint.md are gitignored,
+so the push never includes signing secrets. Verify with:
+  git ls-files | grep -E "keystore|properties|checkpoint"   (expect: nothing)
+
+============================================================
+8) PLAY CONSOLE MERCHANT ACCOUNT (PREREQ for section 6 products)
+============================================================
+
+You said you still need to create this. Paid subscriptions/one-time
+products CANNOT be published until a merchant account is linked.
+
+Click-path:
+  1. Play Console -> (your app) or "All apps".
+  2. Left menu -> Payments profile (or "Setup" -> "Payments profile").
+  3. "Set up a payments profile" / "Create a merchant account".
+  4. Choose account type: Business or Individual.
+  5. Fill: legal name, address, tax info (SSN/EIN for US individual),
+     contact email, phone.
+  6. Add a payout bank account (where Google sends your revenue).
+  7. Accept the Merchant Agreement -> Submit.
+  8. Wait for verification (minutes to a few days; you get an email).
+  9. Confirm status shows "Active / Verified" under Payments profile.
+
+After this is Active, return to section 6 and create:
+  - always_on_monthly (subscription, 7-day trial) and
+  - lifetime_unlock (one-time $19.99).
+The app code already references both IDs and gates Always-on on them.
 
 ============================================================
 SECURITY NOTES (read once)
