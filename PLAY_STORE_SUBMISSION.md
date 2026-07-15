@@ -121,10 +121,35 @@ android.permission.POST_NOTIFICATIONS
 ============================================================
 
 1. Play Console → Create app → fill store listing (section 1) + graphics (4).
+   Privacy Policy URL: https://littleabstract.github.io/CAWatch/privacy_policy.html
 2. Policy → App content → Data safety (section 2) + permissions (section 3).
 3. Publishing → Production → Create release → Upload AAB:
    /Users/Corvo/Dreadful_Wale/user_ca/CAWatch/app/build/outputs/bundle/release/app-release.aab
-4. Submit for review.
+4. Monetize → Products → Subscriptions / One-time (see section 6).
+5. Submit for review.
+
+============================================================
+6) PLAY BILLING PRODUCTS (create after merchant account is linked)
+============================================================
+
+The app gates "Always-on" monitoring behind Google Play Billing. Product IDs
+hardcoded in billing/BillingManager.kt:
+
+  always_on_monthly  — Subscription, base plan WITH a 7-day free trial
+  lifetime_unlock     — One-time "lifetime" unlock
+
+Console click-path (Play Console → Monetize → Products):
+  A) Subscriptions:
+     1. "Subscriptions" → Create subscription → Product ID: always_on_monthly
+     2. Add a base plan → pricing: choose your price (e.g. $3.99/mo) and
+        billing period Monthly.
+     3. Under the base plan → "Add free trial" → 7 days. Save.
+     4. Publish the product.
+  B) One-time:
+     1. "One-time products" → Create product → Product ID: lifetime_unlock
+     2. Price: e.g. $19.99. Save + activate.
+  Note: Play requires a linked merchant account before paid products can be
+  created/published. Free tier (Boot + manual scans) stays fully functional.
 
 ============================================================
 SECURITY NOTES (read once)
